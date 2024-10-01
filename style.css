@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #000000; /* Fundo */
+    color: rgb(170, 170, 170); /* Texto */
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+
+.max-width {
+    max-width: 1200px;
+    margin: auto;
+    padding: 3px;
+}
+
+/* Barra de navegação */
+.navbar {
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+    position:static;
+}
+ .navbar li{
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+ }
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center; 
+}
+
+.menu li {
+    margin:0;
+    font-size: 20px;
+     text-align: center;
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    
+    margin: 2px;
+}
+
+.menu a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Seção inicial */
+.Inicio {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.title {
+        margin-bottom: 20px;
+        font-size: 3em;
+        text-align: center;
+        animation: blink 3s infinite;
+        color: #eeeeee;
+    }
+
+    @keyframes blink {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+    }
+
+
+
+/* Seções sobre nós e o que oferecemos */
+.nos, .oferecer {
+    background-color: #fff; /* Fundo */
+    padding: 80px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra  */
+}
+
+.nos h1, .oferecer h2 {
+    color: #333; /* Texto */
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.nos h2, .oferecer p {
+    line-height: 1.6;
+    color: #555; /* Cinza escuro */
+    font-family: monospace;
+
+}
+
+
+/* Estilo do rodapé */
+.rodapé {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000; /* Fundo escuro */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.rodapé a{
+    text-decoration: #030303;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+    .menu {
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+}
